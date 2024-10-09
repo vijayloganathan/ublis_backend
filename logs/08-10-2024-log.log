@@ -276,3 +276,238 @@
 {"level":"info","message":"GET URL REQ => http://localhost:6200/api/v1/users/login","timestamp":"2024-10-08T10:20:31.352Z"}
 {"level":"info","message":"Router----- line 17","timestamp":"2024-10-08T10:20:34.813Z"}
 {"level":"info","message":"GET URL REQ => http://localhost:6200/api/v1/users/login","timestamp":"2024-10-08T10:20:34.814Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T10:45:17.625Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-08T10:46:42.353Z"}
+{"level":"info","message":"GET URL REQ => http://localhost:6200/api/v1/users/login","timestamp":"2024-10-08T10:46:42.355Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T10:47:13.550Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-08T10:47:24.895Z"}
+{"level":"info","message":"GET URL REQ => http://localhost:6200/api/v1/users/login","timestamp":"2024-10-08T10:47:24.897Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T10:47:44.541Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T10:47:52.343Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T10:48:44.948Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T10:49:07.657Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T10:49:15.478Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T10:49:21.895Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T10:49:26.733Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T10:49:43.332Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-08T10:50:19.048Z"}
+{"level":"info","message":"GET URL REQ => http://localhost:6200/api/v1/users/login","timestamp":"2024-10-08T10:50:19.050Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T10:50:41.351Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T10:50:47.532Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T10:50:56.844Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-08T10:51:06.837Z"}
+{"level":"info","message":"GET URL REQ => http://localhost:6200/api/v1/users/login","timestamp":"2024-10-08T10:51:06.838Z"}
+{"level":"error","message":"Server not running... New route /api/v1/profile/address conflicts with existing /api/v1/profile/address","name":"AssertError","stack":"AssertError: New route /api/v1/profile/address conflicts with existing /api/v1/profile/address\n    at module.exports.internals.Segment.internals.Segment.add (C:\\Users\\VIJAY L\\Desktop\\backend\\node_modules\\@hapi\\call\\lib\\segment.js:47:14)\n    at exports.Router.internals.Router.internals.Router.add (C:\\Users\\VIJAY L\\Desktop\\backend\\node_modules\\@hapi\\call\\lib\\index.js:65:16)\n    at internals.Server._addRoute (C:\\Users\\VIJAY L\\Desktop\\backend\\node_modules\\@hapi\\hapi\\lib\\server.js:529:46)\n    at internals.Server.route (C:\\Users\\VIJAY L\\Desktop\\backend\\node_modules\\@hapi\\hapi\\lib\\server.js:518:22)\n    at C:\\Users\\VIJAY L\\Desktop\\backend\\src\\api\\routes.ts:45:14\n    at new Promise (<anonymous>)\n    at UserProfile.<anonymous> (C:\\Users\\VIJAY L\\Desktop\\backend\\src\\api\\routes.ts:43:12)\n    at Generator.next (<anonymous>)\n    at C:\\Users\\VIJAY L\\Desktop\\backend\\src\\api\\routes.ts:8:71\n    at new Promise (<anonymous>)","timestamp":"2024-10-08T11:02:13.208Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T11:02:16.816Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T11:02:23.073Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T11:02:27.395Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T11:02:30.782Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T11:02:34.906Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T11:02:52.025Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T11:03:12.782Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T11:03:16.100Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T11:03:20.103Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T11:03:58.684Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T11:04:06.415Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T11:04:11.683Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T11:04:15.267Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T11:04:24.275Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T11:04:29.331Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T11:04:32.440Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T11:04:42.303Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T11:04:47.901Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T11:04:53.258Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T11:04:58.288Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T11:05:02.821Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T11:05:06.324Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T11:05:53.255Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T11:05:56.934Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T11:06:01.867Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T11:06:10.629Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T11:06:32.977Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T11:06:37.226Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T11:06:41.226Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T11:06:44.962Z"}
+{"level":"info","message":"Router-----store Address","timestamp":"2024-10-08T11:07:39.143Z"}
+{"level":"info","message":"GET URL REQ => http://localhost:6200/api/v1/profile/personalData","timestamp":"2024-10-08T11:07:39.144Z"}
+{"level":"error","message":"Error in userLogin: Cannot read properties of undefined (reading 'addresstype')","stack":"TypeError: Cannot read properties of undefined (reading 'addresstype')\n    at ProfileRepository.<anonymous> (C:\\Users\\VIJAY L\\Desktop\\backend\\src\\api\\profile\\profile-repository.ts:12:26)\n    at Generator.next (<anonymous>)\n    at C:\\Users\\VIJAY L\\Desktop\\backend\\src\\api\\profile\\profile-repository.ts:8:71\n    at new Promise (<anonymous>)\n    at __awaiter (C:\\Users\\VIJAY L\\Desktop\\backend\\src\\api\\profile\\profile-repository.ts:4:12)\n    at ProfileRepository.userAddressV1 (C:\\Users\\VIJAY L\\Desktop\\backend\\src\\api\\profile\\profile-repository.ts:19:16)\n    at ProfileResolver.<anonymous> (C:\\Users\\VIJAY L\\Desktop\\backend\\src\\api\\resolver.ts:28:41)\n    at Generator.next (<anonymous>)\n    at C:\\Users\\VIJAY L\\Desktop\\backend\\src\\api\\resolver.ts:8:71\n    at new Promise (<anonymous>)","timestamp":"2024-10-08T11:07:39.150Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T11:08:47.195Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T11:09:07.767Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T11:09:25.827Z"}
+{"level":"info","message":"Router-----store Personal Data","timestamp":"2024-10-08T11:09:27.381Z"}
+{"level":"info","message":"GET URL REQ => http://localhost:6200/api/v1/profile/personalData","timestamp":"2024-10-08T11:09:27.382Z"}
+{"level":"error","message":"Error in userLogin: Cannot read properties of undefined (reading 'success')","stack":"TypeError: Cannot read properties of undefined (reading 'success')\n    at UserProfileController.<anonymous> (C:\\Users\\VIJAY L\\Desktop\\backend\\src\\api\\controller.ts:132:18)\n    at Generator.next (<anonymous>)\n    at fulfilled (C:\\Users\\VIJAY L\\Desktop\\backend\\src\\api\\controller.ts:5:58)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)","timestamp":"2024-10-08T11:09:27.388Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T11:11:16.424Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T11:11:27.240Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T11:12:03.081Z"}
+{"level":"info","message":"Router-----store Personal Data","timestamp":"2024-10-08T11:12:03.781Z"}
+{"level":"info","message":"GET URL REQ => http://localhost:6200/api/v1/profile/personalData","timestamp":"2024-10-08T11:12:03.782Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T11:13:43.368Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T11:13:53.878Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T11:14:52.485Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T11:15:04.731Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T11:15:07.711Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T11:15:11.826Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T11:15:22.512Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T11:15:25.901Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T11:15:30.809Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T11:16:27.979Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T11:16:53.072Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T11:16:59.201Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T11:17:02.095Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T11:17:09.206Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T11:17:14.307Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T11:17:17.754Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T11:17:22.193Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T11:17:27.040Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T11:17:37.356Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T11:17:47.739Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T11:17:52.948Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T11:18:08.491Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T11:18:24.081Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T11:18:31.166Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T11:19:30.884Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T11:19:43.262Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T11:26:39.791Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T11:26:42.525Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T11:33:31.018Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T11:33:48.807Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T11:33:58.923Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T11:34:04.145Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T11:34:10.271Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T11:34:13.013Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T11:34:16.922Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T11:34:21.180Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T11:34:26.470Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T11:34:29.894Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T11:34:33.058Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T11:34:37.131Z"}
+{"level":"info","message":"Router-----store Personal Data","timestamp":"2024-10-08T11:36:40.113Z"}
+{"level":"info","message":"GET URL REQ => http://localhost:6200/api/v1/profile/personalData","timestamp":"2024-10-08T11:36:40.114Z"}
+{"level":"error","message":"Error in userLogin: Database query failed: trailing junk after parameter at or near \"$4WHERE\"","stack":"Error: Database query failed: trailing junk after parameter at or near \"$4WHERE\"\n    at C:\\Users\\VIJAY L\\Desktop\\backend\\src\\helper\\db.ts:27:11\n    at Generator.throw (<anonymous>)\n    at rejected (C:\\Users\\VIJAY L\\Desktop\\backend\\src\\helper\\db.ts:6:65)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)","timestamp":"2024-10-08T11:36:40.275Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T11:37:13.804Z"}
+{"level":"info","message":"Router-----store Personal Data","timestamp":"2024-10-08T11:37:19.095Z"}
+{"level":"info","message":"GET URL REQ => http://localhost:6200/api/v1/profile/personalData","timestamp":"2024-10-08T11:37:19.096Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T11:57:28.399Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T11:57:33.675Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T11:57:52.414Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T11:58:25.388Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T11:58:31.981Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T11:58:50.251Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T11:58:53.698Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T11:59:21.345Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T11:59:25.525Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T12:01:32.942Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T12:02:01.897Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T12:02:07.480Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T12:02:11.587Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T12:02:20.214Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T12:02:29.461Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T12:03:47.362Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T12:03:50.360Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T12:04:00.719Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T12:04:09.212Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T12:04:23.148Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T12:04:51.096Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T12:04:54.557Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T12:05:00.905Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T12:05:13.846Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T12:05:43.794Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T12:05:47.044Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T12:06:07.915Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T12:06:37.535Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T12:06:52.101Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T12:07:02.927Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T12:07:26.397Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T12:08:53.296Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T12:09:27.794Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T12:09:51.624Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T12:09:58.080Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T12:10:28.618Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T12:10:32.999Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T12:10:59.417Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T12:11:05.003Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T12:11:11.348Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T12:11:16.375Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T12:11:26.019Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T12:11:32.316Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T12:11:43.137Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T12:12:12.488Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T12:13:22.515Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T12:13:29.379Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2024-10-08T12:18:24.868Z"}
+{"level":"info","message":"Router - sign up page","timestamp":"2024-10-08T12:18:52.591Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-08T12:19:09.304Z"}
+{"level":"info","message":"GET URL REQ => http://localhost:6200/api/v1/users/login","timestamp":"2024-10-08T12:19:09.307Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T16:37:26.935Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T16:44:54.316Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T16:45:12.873Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T16:45:38.223Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T16:45:50.775Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T16:46:05.123Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T16:46:14.468Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T16:46:18.579Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T16:46:32.036Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T16:46:49.265Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T16:47:01.786Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T16:47:07.928Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T16:47:47.865Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T16:47:54.273Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T16:48:02.463Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T16:48:09.434Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T16:48:16.743Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T16:49:04.524Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T16:49:29.848Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T16:51:17.774Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T16:52:44.698Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T16:52:55.847Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T16:53:07.948Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T16:53:14.893Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T16:53:24.440Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T16:53:27.827Z"}
+{"level":"info","message":"Router-----store General Health","timestamp":"2024-10-08T16:56:54.484Z"}
+{"level":"info","message":"GET URL REQ => http://localhost:6200/api/v1/profile/generalHealth","timestamp":"2024-10-08T16:56:54.485Z"}
+{"level":"error","message":"Error in userLogin: Cannot read properties of undefined (reading 'refMedicalDetails')","stack":"TypeError: Cannot read properties of undefined (reading 'refMedicalDetails')\n    at ProfileRepository.<anonymous> (C:\\Users\\VIJAY L\\Desktop\\backend\\src\\api\\profile\\profile-repository.ts:80:30)\n    at Generator.next (<anonymous>)\n    at C:\\Users\\VIJAY L\\Desktop\\backend\\src\\api\\profile\\profile-repository.ts:8:71\n    at new Promise (<anonymous>)\n    at __awaiter (C:\\Users\\VIJAY L\\Desktop\\backend\\src\\api\\profile\\profile-repository.ts:4:12)\n    at ProfileRepository.userGeneralHealthV1 (C:\\Users\\VIJAY L\\Desktop\\backend\\src\\api\\profile\\profile-repository.ts:67:16)\n    at ProfileResolver.<anonymous> (C:\\Users\\VIJAY L\\Desktop\\backend\\src\\api\\resolver.ts:36:41)\n    at Generator.next (<anonymous>)\n    at C:\\Users\\VIJAY L\\Desktop\\backend\\src\\api\\resolver.ts:8:71\n    at new Promise (<anonymous>)","timestamp":"2024-10-08T16:56:54.491Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T16:59:21.213Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T16:59:31.044Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T16:59:48.980Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T16:59:54.009Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T16:59:59.309Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T17:00:06.896Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T17:00:11.105Z"}
+{"level":"info","message":"Router-----store General Health","timestamp":"2024-10-08T17:00:16.517Z"}
+{"level":"info","message":"GET URL REQ => http://localhost:6200/api/v1/profile/generalHealth","timestamp":"2024-10-08T17:00:16.518Z"}
+{"level":"error","message":"Error in userLogin: Cannot read properties of undefined (reading 'refMedicalDetails')","stack":"TypeError: Cannot read properties of undefined (reading 'refMedicalDetails')\n    at ProfileRepository.<anonymous> (C:\\Users\\VIJAY L\\Desktop\\backend\\src\\api\\profile\\profile-repository.ts:81:30)\n    at Generator.next (<anonymous>)\n    at C:\\Users\\VIJAY L\\Desktop\\backend\\src\\api\\profile\\profile-repository.ts:8:71\n    at new Promise (<anonymous>)\n    at __awaiter (C:\\Users\\VIJAY L\\Desktop\\backend\\src\\api\\profile\\profile-repository.ts:4:12)\n    at ProfileRepository.userGeneralHealthV1 (C:\\Users\\VIJAY L\\Desktop\\backend\\src\\api\\profile\\profile-repository.ts:67:16)\n    at ProfileResolver.<anonymous> (C:\\Users\\VIJAY L\\Desktop\\backend\\src\\api\\resolver.ts:36:41)\n    at Generator.next (<anonymous>)\n    at C:\\Users\\VIJAY L\\Desktop\\backend\\src\\api\\resolver.ts:8:71\n    at new Promise (<anonymous>)","timestamp":"2024-10-08T17:00:16.533Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T17:02:02.478Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T17:02:43.882Z"}
+{"level":"info","message":"Router-----store General Health","timestamp":"2024-10-08T17:03:20.489Z"}
+{"level":"info","message":"GET URL REQ => http://localhost:6200/api/v1/profile/generalHealth","timestamp":"2024-10-08T17:03:20.490Z"}
+{"level":"error","message":"Error in userLogin: Cannot read properties of undefined (reading 'refMedicalDetails')","stack":"TypeError: Cannot read properties of undefined (reading 'refMedicalDetails')\n    at ProfileRepository.<anonymous> (C:\\Users\\VIJAY L\\Desktop\\backend\\src\\api\\profile\\profile-repository.ts:81:30)\n    at Generator.next (<anonymous>)\n    at C:\\Users\\VIJAY L\\Desktop\\backend\\src\\api\\profile\\profile-repository.ts:8:71\n    at new Promise (<anonymous>)\n    at __awaiter (C:\\Users\\VIJAY L\\Desktop\\backend\\src\\api\\profile\\profile-repository.ts:4:12)\n    at ProfileRepository.userGeneralHealthV1 (C:\\Users\\VIJAY L\\Desktop\\backend\\src\\api\\profile\\profile-repository.ts:67:16)\n    at ProfileResolver.<anonymous> (C:\\Users\\VIJAY L\\Desktop\\backend\\src\\api\\resolver.ts:36:41)\n    at Generator.next (<anonymous>)\n    at C:\\Users\\VIJAY L\\Desktop\\backend\\src\\api\\resolver.ts:8:71\n    at new Promise (<anonymous>)","timestamp":"2024-10-08T17:03:20.513Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T17:04:24.863Z"}
+{"level":"info","message":"Router-----store General Health","timestamp":"2024-10-08T17:04:30.891Z"}
+{"level":"info","message":"GET URL REQ => http://localhost:6200/api/v1/profile/generalHealth","timestamp":"2024-10-08T17:04:30.892Z"}
+{"level":"error","message":"Error in userLogin: Database query failed: INSERT has more expressions than target columns","stack":"Error: Database query failed: INSERT has more expressions than target columns\n    at C:\\Users\\VIJAY L\\Desktop\\backend\\src\\helper\\db.ts:27:11\n    at Generator.throw (<anonymous>)\n    at rejected (C:\\Users\\VIJAY L\\Desktop\\backend\\src\\helper\\db.ts:6:65)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)","timestamp":"2024-10-08T17:04:30.993Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T17:05:06.486Z"}
+{"level":"info","message":"Router-----store General Health","timestamp":"2024-10-08T17:05:07.590Z"}
+{"level":"info","message":"GET URL REQ => http://localhost:6200/api/v1/profile/generalHealth","timestamp":"2024-10-08T17:05:07.591Z"}
+{"level":"error","message":"Error in userLogin: Database query failed: INSERT has more expressions than target columns","stack":"Error: Database query failed: INSERT has more expressions than target columns\n    at C:\\Users\\VIJAY L\\Desktop\\backend\\src\\helper\\db.ts:27:11\n    at Generator.throw (<anonymous>)\n    at rejected (C:\\Users\\VIJAY L\\Desktop\\backend\\src\\helper\\db.ts:6:65)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)","timestamp":"2024-10-08T17:05:07.683Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T17:07:45.023Z"}
+{"level":"info","message":"Router-----store General Health","timestamp":"2024-10-08T17:08:16.951Z"}
+{"level":"info","message":"GET URL REQ => http://localhost:6200/api/v1/profile/generalHealth","timestamp":"2024-10-08T17:08:16.952Z"}
+{"level":"error","message":"Error in userLogin: Database query failed: invalid input syntax for type integer: \"175 cm\"","stack":"Error: Database query failed: invalid input syntax for type integer: \"175 cm\"\n    at C:\\Users\\VIJAY L\\Desktop\\backend\\src\\helper\\db.ts:27:11\n    at Generator.throw (<anonymous>)\n    at rejected (C:\\Users\\VIJAY L\\Desktop\\backend\\src\\helper\\db.ts:6:65)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)","timestamp":"2024-10-08T17:08:17.048Z"}
+{"level":"info","message":"Router-----store General Health","timestamp":"2024-10-08T17:09:26.220Z"}
+{"level":"info","message":"GET URL REQ => http://localhost:6200/api/v1/profile/generalHealth","timestamp":"2024-10-08T17:09:26.221Z"}
+{"level":"error","message":"Error in userLogin: Database query failed: invalid input syntax for type integer: \"{\"2\",\"4\",\"6\",\"7\"}\"","stack":"Error: Database query failed: invalid input syntax for type integer: \"{\"2\",\"4\",\"6\",\"7\"}\"\n    at C:\\Users\\VIJAY L\\Desktop\\backend\\src\\helper\\db.ts:27:11\n    at Generator.throw (<anonymous>)\n    at rejected (C:\\Users\\VIJAY L\\Desktop\\backend\\src\\helper\\db.ts:6:65)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)","timestamp":"2024-10-08T17:09:26.427Z"}
+{"level":"info","message":"Router-----store General Health","timestamp":"2024-10-08T17:17:07.157Z"}
+{"level":"info","message":"GET URL REQ => http://localhost:6200/api/v1/profile/generalHealth","timestamp":"2024-10-08T17:17:07.158Z"}
+{"level":"error","message":"Error in userLogin: Database query failed: invalid input syntax for type json","stack":"Error: Database query failed: invalid input syntax for type json\n    at C:\\Users\\VIJAY L\\Desktop\\backend\\src\\helper\\db.ts:27:11\n    at Generator.throw (<anonymous>)\n    at rejected (C:\\Users\\VIJAY L\\Desktop\\backend\\src\\helper\\db.ts:6:65)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)","timestamp":"2024-10-08T17:17:07.393Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T17:19:37.636Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T17:19:53.047Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T17:20:22.126Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T17:20:26.100Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T17:20:34.562Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T17:20:40.119Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T17:20:51.936Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-08T17:21:07.434Z"}
+{"level":"info","message":"Router-----store General Health","timestamp":"2024-10-08T17:21:11.958Z"}
+{"level":"info","message":"GET URL REQ => http://localhost:6200/api/v1/profile/generalHealth","timestamp":"2024-10-08T17:21:11.959Z"}

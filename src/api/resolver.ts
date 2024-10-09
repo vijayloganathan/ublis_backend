@@ -1,5 +1,6 @@
 import { UserRepository } from "./users/user-repository";
 import { ProfileRepository } from "./profile/profile-repository";
+import { StaffRepository } from "./staff/staff-repository";
 
 export class Resolver {
   public userRepository: any;
@@ -28,7 +29,59 @@ export class ProfileResolver {
     return await this.profileRepository.userAddressV1(user_data, domain_code);
   }
 
-  public async userGeneralHealthV1(user_data: any,domain_code: any): Promise<any> {
-    return await this.profileRepository.userGeneralHealthV1(user_data,domain_code);
+  public async userPersonalDataV1(
+    user_data: any,
+    domain_code: any
+  ): Promise<any> {
+    return await this.profileRepository.userPersonalDataV1(
+      user_data,
+      domain_code
+    );
+  }
+
+  public async userGeneralHealthV1(
+    user_data: any,
+    domain_code: any
+  ): Promise<any> {
+    return await this.profileRepository.userGeneralHealthV1(
+      user_data,
+      domain_code
+    );
+  }
+
+  public async userRegisterDataV1(
+    user_data: any,
+    domain_code: any
+  ): Promise<any> {
+    return await this.profileRepository.userRegisterDataV1(
+      user_data,
+      domain_code
+    );
+  }
+  public async userRegisterPageDataV1(
+    userData: any,
+    domainCode: any
+  ): Promise<any> {
+    return await this.profileRepository.userRegisterPageDataV1(
+      userData,
+      domainCode
+    );
+  }
+}
+
+export class FrontDeskResolver {
+  
+  public StaffRepository: any;
+  constructor() {
+    this.StaffRepository = new StaffRepository();
+  }
+  public async staffStudentApprovalV1(
+    user_data: any,
+    domain_code: any
+  ): Promise<any> {
+    return await this.StaffRepository.staffStudentApprovalV1(
+      user_data,
+      domain_code
+    );
   }
 }
