@@ -60,8 +60,11 @@ export class ProfileResolver {
   }
   public async userRegisterPageDataV1(
     userData: any,
-    domainCode: any
+    domainCode: any,
+    decodedToken: any
   ): Promise<any> {
+    // const userId = decodedToken.userId;
+    // console.log("\n\n\nuserId====", userId);
     return await this.profileRepository.userRegisterPageDataV1(
       userData,
       domainCode
@@ -70,7 +73,6 @@ export class ProfileResolver {
 }
 
 export class FrontDeskResolver {
-  
   public StaffRepository: any;
   constructor() {
     this.StaffRepository = new StaffRepository();

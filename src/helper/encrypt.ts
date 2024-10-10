@@ -1,14 +1,22 @@
 import * as crypto from "crypto";
 
-function encrypt(text: string | object): [string, string] {
-  const algorithm = "aes-256-cbc";
-  const encryptionKey = process.env.ENCRYPTION_KEY;
+interface EncryptedData {
+  iv: string;
+  encryptedData: string;
+}
 
-  if (!encryptionKey) {
-    throw new Error("ENCRYPTION_KEY is not set in environment variables");
+function encrypt(
+  text: string | object,
+  encryptStatus?: boolean
+): string[] | { text: string | object } {
+  // console.log("encrypt status line -----12", encryptStatus);
+
+  if (!encryptStatus) {
+    return { text }; // Return the original input if encryption is not enabled
   }
 
-  const key = Buffer.from(encryptionKey, "hex");
+  const algorithm = "aes-256-cbc";
+  const key = Buffer.from(process.env.ENCRYPTION_KEY as string, "hex");
   const iv = crypto.randomBytes(16);
 
   if (key.length !== 32) {
@@ -21,7 +29,7 @@ function encrypt(text: string | object): [string, string] {
   let encrypted = cipher.update(textToEncrypt, "utf-8", "hex");
   encrypted += cipher.final("hex");
 
-  // Return the `iv` and `encryptedData` as a tuple (array)
+  // Return values as an array: [iv, encryptedData]
   return [iv.toString("hex"), encrypted];
 }
 

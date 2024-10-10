@@ -13,6 +13,7 @@ import { encrypt } from "../../helper/encrypt";
 import { v4 as uuidv4 } from "uuid";
 import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
+import { generateToken } from "../../helper/token";
 
 const JWT_SECRET = process.env.ACCESS_TOKEN || "ERROR";
 
@@ -41,24 +42,33 @@ export class UserRepository {
         const updateHistory = await executeQuery(updateHistoryQuery, history);
 
         if (updateHistory && updateHistory.length > 0) {
-          const token = this.generateToken(user);
-          return {
-            success: true,
-            message: "Login successful",
-            // user,
-            token,
-            // Return user token
+          const tokenData = {
+            id: user.refStId,
+            custId: user.refSCustId,
+            status: user.refSUserStatus,
           };
+
+          return encrypt(
+            {
+              success: true,
+              message: "Login successful",
+              token: generateToken(tokenData, true),
+            },
+            true
+          );
         }
       }
     }
 
     // Return error if user not found or invalid password
     // return { success: false, message: "Invalid email or password" };
-    return encrypt({
-      success: false,
-      message: "Invalid email or password",
-    });
+    return encrypt(
+      {
+        success: false,
+        message: "Invalid email or password",
+      },
+      true
+    );
   }
 
   // SIGN UP FUNCTION
@@ -72,10 +82,13 @@ export class UserRepository {
     const userFind = userCheck[0];
 
     if (userFind) {
-      return encrypt({
-        success: false,
-        message: "Username Already Exist",
-      });
+      return encrypt(
+        {
+          success: false,
+          message: "Username Already Exist",
+        },
+        true
+      );
       // return { success: false, message: "Username Already Exist" };
     } else {
       const userCountResult = await executeQuery(getCustomerCount);
@@ -137,44 +150,52 @@ export class UserRepository {
 
         // Check if the history update was successful
         if (updateHistory && updateHistory.length > 0) {
-          const token = this.generateToken(newUser);
-          return encrypt({
-            success: true,
-            message: "User signup successful",
-            user: newUser,
-            token,
-          });
-          // return {
-          //   success: true,
-          //   message: "User signup successful",
-          //   user: newUser,
-          //   token,
-          // };
+          const tokenData = {
+            id: newUser.refStId, // refStId from users table
+            email: userData.temp_su_email,
+            custId: newUser.refSCustId,
+            status: newUser.refSUserStatus,
+          };
+          return encrypt(
+            {
+              success: true,
+              message: "User signup successful",
+              user: newUser,
+              token: generateToken(tokenData, true),
+            },
+            true
+          );
         } else {
-          return encrypt({
-            success: false,
-            message: "Failed to update history",
-          });
+          return encrypt(
+            {
+              success: false,
+              message: "Failed to update history",
+            },
+            true
+          );
           // return { success: false, message: "Failed to update history" };
         }
       } else {
-        return encrypt({
-          success: false,
-          message: "Signup failed",
-        });
+        return encrypt(
+          {
+            success: false,
+            message: "Signup failed",
+          },
+          true
+        );
         // return { success: false, message: "Signup failed" };
       }
     }
   }
 
   // Helper function to generate JWT token
-  private generateToken(user: any): string {
-    const payload = {
-      id: user.refStId, // refStId from users table
-      email: user.refCustPrimEmail,
-      custId: user.refSCustId,
-      status: user.refSUserStatus,
-    };
-    return jwt.sign(payload, JWT_SECRET, { expiresIn: "20m" });
-  }
+  // private generateToken(user: any): string {
+  //   const payload = {
+  //     id: user.refStId, // refStId from users table
+  //     email: user.refCustPrimEmail,
+  //     custId: user.refSCustId,
+  //     status: user.refSUserStatus,
+  //   };
+  //   return jwt.sign(payload, JWT_SECRET, { expiresIn: "20m" });
+  // }
 }

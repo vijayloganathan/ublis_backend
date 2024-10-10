@@ -2,6 +2,7 @@ import * as Hapi from "@hapi/hapi";
 import * as Boom from "@hapi/boom";
 import { Resolver, ProfileResolver, FrontDeskResolver } from "./resolver";
 import logger from "../helper/logger";
+import { decodeToken } from "../helper/token";
 
 export class UserController {
   public resolver: any;
@@ -178,16 +179,17 @@ export class UserProfileController {
   };
 
   public userRegisterData = async (
-    request: Hapi.Request,
+    request: any,
     response: Hapi.ResponseToolkit
   ): Promise<any> => {
+    const decodedToken = request.plugins.token.id;
     logger.info("Router-----store Register Form Data");
     try {
       logger.info(`GET URL REQ => ${request.url.href}`);
       const domainCode = request.headers.domain_code || "";
       let entity;
 
-      entity = await this.resolver.userRegisterDataV1(request.payload);
+      entity = await this.resolver.userRegisterDataV1(request.payload,decodedToken);
 
       // Check entity response for success/failure
       if (entity.success) {
@@ -209,12 +211,18 @@ export class UserProfileController {
   };
 
   public userRegisterPageData = async (
-    request: Hapi.Request,
+    request: any,
     response: Hapi.ResponseToolkit
   ): Promise<any> => {
+    const decodedToken = request.plugins.token;
+    console.log("Decoded Token in Controller:", decodedToken.id);
+
     try {
       logger.info(`GET URL REQ => ${request.url.href}`);
-      const refStId = parseInt(request.query.refStId, 10); // Convert refStId to integer
+
+      const refStId = decodedToken.id;
+      console.log("refStId line------223", refStId);
+
       const domainCode = request.headers.domain_code || "";
 
       if (isNaN(refStId)) {
@@ -226,9 +234,9 @@ export class UserProfileController {
           .code(400);
       }
 
-      // Pass refStId as an integer
+      // Pass refStId and userId to the repository function
       const entity = await this.resolver.userRegisterPageDataV1(
-        { refStId },
+        { refStId }, // Add userId here
         domainCode
       );
 

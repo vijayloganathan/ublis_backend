@@ -4,6 +4,7 @@ import IRoute from "../helper/routes";
 import validate from "./validate";
 import { UserController, UserProfileController, FrontDesk } from "./controller";
 import { Logger } from "winston";
+import { decodeToken, validateToken } from "../helper/token";
 
 export class UserRouters implements IRoute {
   public async register(server: any): Promise<any> {
@@ -77,16 +78,19 @@ export class UserProfile implements IRoute {
           method: "POST",
           path: "/api/v1/profile/RegisterData",
           config: {
+            pre: [{ method: validateToken, assign: "token" }], // Use the validateToken function here
             handler: controller.userRegisterData,
-            description: "Store General Health",
+            description: "Store Register Form Data",
             tags: ["api", "Users"],
             auth: false,
           },
         },
+
         {
           method: "GET",
           path: "/api/v1/profile/passRegisterData",
           config: {
+            pre: [{ method: validateToken, assign: "token" }], // Use the validateToken function here
             handler: controller.userRegisterPageData,
             description: "Passing the register Data to the Register Page",
             tags: ["api", "Users"],

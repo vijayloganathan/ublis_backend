@@ -8,6 +8,7 @@ import {
   fetchPresentHealthProblem,
 } from "./query";
 import { encrypt } from "../../helper/encrypt";
+import { generateToken } from "../../helper/token";
 
 export class ProfileRepository {
   // STORING ADDRESS IN DB
@@ -41,10 +42,11 @@ export class ProfileRepository {
     //   success: true,
     //   message: "Registered Successfully",
     // };
-    return encrypt({
+    const results = {
       success: true,
       message: "Address Stored Successfully",
-    });
+    };
+    return encrypt(results, true);
   }
 
   public async userPersonalDataV1(userData: any): Promise<any> {
@@ -61,10 +63,11 @@ export class ProfileRepository {
     //   message: "Registered Successfully",
     //   updatedData: userResult,
     // };
-    return encrypt({
+    const results = {
       message: "Personal Data Stored Successfully",
       updatedData: userResult,
-    });
+    };
+    return encrypt(results, true);
   }
 
   public async userGeneralHealthV1(userData: any): Promise<any> {
@@ -99,15 +102,22 @@ export class ProfileRepository {
     ];
 
     const userResult = await executeQuery(insertProfileGeneralHealth, params);
-
-    return encrypt({
+    const results = {
       success: true,
       message: "Health Data Stored  Successfully",
-    });
+    };
+    return encrypt(results, true);
   }
-  public async userRegisterDataV1(userData: any): Promise<any> {
+  public async userRegisterDataV1(
+    userData: any,
+    decodedToken: number
+  ): Promise<any> {
     try {
+      userData.refStId = decodedToken;
+      console.log("UserData line--------------116", userData);
       // Personal Data Storing
+
+      // userData.refStId = decodedToken;
       const paramsProfile = [
         userData.personalData.ref_su_gender,
         userData.personalData.ref_su_qulify,
@@ -149,15 +159,18 @@ export class ProfileRepository {
         userData.address.refAdPincode2,
       ];
 
+      console.log("paramsAddress", paramsAddress);
       const userResult2 = await executeQuery(
         insertProfileAddressQuery,
         paramsAddress
       );
 
+      console.log("userResult2", userResult2);
       // Storing Health Details Data
       const refPresentHealthJson = JSON.stringify(
         userData.generalhealth.refPresentHealth
       );
+      console.log("refPresentHealthJson", refPresentHealthJson);
 
       const paramsHealth = [
         userData.refStId,
@@ -185,28 +198,44 @@ export class ProfileRepository {
         userData.generalhealth.refAnythingelse,
       ];
 
+      console.log("paramsHealth", paramsHealth);
       const userResult3 = await executeQuery(
         insertProfileGeneralHealth,
         paramsHealth
       );
 
+      console.log("userResult3", userResult3);
+      const token = {
+        id: userData.refStId,
+      };
+      console.log("token", token);
       // Check if all results are successful
+      console.log(
+        "userResult1 && userResult2 && userResult3",
+        userResult1 && userResult2 && userResult3
+      );
+
       if (userResult1 && userResult2 && userResult3) {
-        return encrypt({
+        const results = {
           success: true,
           message: "All data stored successfully",
-        });
+          token: generateToken(token, true),
+        };
+        return encrypt(results, true);
       } else {
-        return encrypt({
+        const results = {
           success: false,
           message: "Failed to store data in one or more tables",
-        });
+          token: generateToken(token, true),
+        };
+        return encrypt(results, false);
       }
     } catch (error) {
-      return encrypt({
+      const results = {
         success: false,
         message: error,
-      });
+      };
+      return encrypt(results, false);
     }
   }
 
@@ -261,11 +290,21 @@ export class ProfileRepository {
         presentHealthProblem: presentHealthProblem,
       };
 
-      return encrypt({
-        success: true,
-        message: "userRegisterPageData",
-        data: registerData,
-      });
+      const tokenData = {
+        id: refStId,
+      };
+
+      const token = generateToken(tokenData, true);
+
+      return encrypt(
+        {
+          success: true,
+          message: "userRegisterPageData",
+          data: registerData,
+          token: token,
+        },
+        true
+      );
     } catch (error) {
       console.error("Error in userRegisterPageDataV1:", error);
       throw error;
