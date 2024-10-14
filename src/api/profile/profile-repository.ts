@@ -47,6 +47,7 @@ export class ProfileRepository {
   }
 
   public async userPersonalDataV1(userData: any): Promise<any> {
+    console.log("userData line-------50");
     const params = [
       userData.personalData.ref_su_gender,
       userData.personalData.ref_su_qulify,
@@ -225,6 +226,78 @@ export class ProfileRepository {
       return encrypt(results, false);
     } finally {
       client.release(); // Release the client back to the pool
+    }
+  }
+
+  public async userRegisterPageDataV1(userData: any): Promise<any> {
+    try {
+      const refStId = parseInt(userData.refStId, 10);
+      if (isNaN(refStId)) {
+        throw new Error("Invalid refStId. Must be a number.");
+      }
+
+      const params = [refStId];
+      const profileResult = await executeQuery(fetchProfileData, params);
+
+      if (!profileResult.length) {
+        throw new Error("Profile data not found for refStId: " + refStId);
+      }
+
+      function formatDate(isoDate: any) {
+        const date = new Date(isoDate); // Create a new Date object
+        const day = String(date.getDate()).padStart(2, "0"); // Get the day and pad with zero if needed
+        const month = String(date.getMonth() + 1).padStart(2, "0"); // Get the month (0-based) and pad with zero
+        const year = date.getFullYear(); // Get the full year
+
+        return `${year}-${month}-${day}`; // Return formatted date
+      }
+
+      const profileData = {
+        fname: profileResult[0].refStFName,
+        lname: profileResult[0].refStLName,
+        dob: formatDate(profileResult[0].refStDOB),
+        username: profileResult[0].refUserName,
+        email: profileResult[0].refCtEmail,
+        phone: profileResult[0].refCtMobile,
+        age: profileResult[0].refStAge,
+      };
+
+      const timingResult = await executeQuery(fetchPreferableTiming, []);
+      const preferableTiming = timingResult.reduce((acc: any, row: any) => {
+        acc[row.refTimeId] = row.refTime;
+        return acc;
+      }, {});
+
+      const healthResult = await executeQuery(fetchPresentHealthProblem, []);
+      const presentHealthProblem = healthResult.reduce((acc: any, row: any) => {
+        acc[row.refHealthId] = row.refHealth;
+        return acc;
+      }, {});
+
+      const registerData = {
+        ProfileData: profileData,
+        PreferableTiming: preferableTiming,
+        presentHealthProblem: presentHealthProblem,
+      };
+
+      const tokenData = {
+        id: refStId,
+      };
+
+      const token = generateToken(tokenData, true);
+
+      return encrypt(
+        {
+          success: true,
+          message: "userRegisterPageData",
+          data: registerData,
+          token: token,
+        },
+        true
+      );
+    } catch (error) {
+      console.error("Error in userRegisterPageDataV1:", error);
+      throw error;
     }
   }
 }

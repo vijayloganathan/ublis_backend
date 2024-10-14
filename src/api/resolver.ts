@@ -64,6 +64,7 @@ export class ProfileResolver {
     domainCode: any,
     decodedToken: any
   ): Promise<any> {
+    console.log("userRegisterPageDataV1 line-------69", userData);
     // const userId = decodedToken.userId;
     // console.log("\n\n\nuserId====", userId);
     return await this.profileRepository.userRegisterPageDataV1(

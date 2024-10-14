@@ -224,6 +224,7 @@ export class UserProfileController {
       console.log("refStId line------223", refStId);
 
       const domainCode = request.headers.domain_code || "";
+      console.log('domainCode line------227', domainCode)
 
       if (isNaN(refStId)) {
         return response
