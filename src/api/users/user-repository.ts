@@ -20,6 +20,8 @@ const JWT_SECRET = process.env.ACCESS_TOKEN || "ERROR";
 export class UserRepository {
   // SIGN IN FUNCTION
   public async userLoginV1(user_data: any, domain_code?: any): Promise<any> {
+    console.log("user_data line-------23", user_data);
+
     const params = [user_data.username];
     const users = await executeQuery(selectUserByUsername, params); // Execute select query
 

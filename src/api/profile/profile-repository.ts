@@ -1,4 +1,4 @@
-import { executeQuery } from "../../helper/db";
+import { executeQuery, getClient } from "../../helper/db";
 import {
   insertProfileAddressQuery,
   insertProfileGeneralHealth,
@@ -9,6 +9,7 @@ import {
 } from "./query";
 import { encrypt } from "../../helper/encrypt";
 import { generateToken } from "../../helper/token";
+import { PoolClient } from "pg"; // Assuming you're using pg library for PostgreSQL
 
 export class ProfileRepository {
   // STORING ADDRESS IN DB
@@ -38,10 +39,6 @@ export class ProfileRepository {
     ];
 
     const userResult = await executeQuery(insertProfileAddressQuery, params);
-    // return {
-    //   success: true,
-    //   message: "Registered Successfully",
-    // };
     const results = {
       success: true,
       message: "Address Stored Successfully",
@@ -59,10 +56,6 @@ export class ProfileRepository {
     ];
     const userResult = await executeQuery(insertProfilePersonalData, params);
 
-    // return {
-    //   message: "Registered Successfully",
-    //   updatedData: userResult,
-    // };
     const results = {
       message: "Personal Data Stored Successfully",
       updatedData: userResult,
@@ -104,20 +97,23 @@ export class ProfileRepository {
     const userResult = await executeQuery(insertProfileGeneralHealth, params);
     const results = {
       success: true,
-      message: "Health Data Stored  Successfully",
+      message: "Health Data Stored Successfully",
     };
     return encrypt(results, true);
   }
+
   public async userRegisterDataV1(
     userData: any,
     decodedToken: number
   ): Promise<any> {
+    const client: PoolClient = await getClient(); // Get the database client
     try {
-      userData.refStId = decodedToken;
-      console.log("UserData line--------------116", userData);
-      // Personal Data Storing
+      // Start the transaction
+      await client.query("BEGIN");
 
-      // userData.refStId = decodedToken;
+      userData.refStId = decodedToken;
+
+      // Step 1: Update personal data in users table
       const paramsProfile = [
         userData.personalData.ref_su_gender,
         userData.personalData.ref_su_qulify,
@@ -126,19 +122,18 @@ export class ProfileRepository {
         userData.personalData.ref_su_timing,
         userData.refStId,
       ];
-      console.log("paramsProfile", paramsProfile);
-      console.log("insertProfilePersonalData", insertProfilePersonalData);
-      const userResult1 = await executeQuery(
+      const userResult1 = await client.query(
         insertProfilePersonalData,
         paramsProfile
       );
-      console.log("userResult1", userResult1);
+      if (!userResult1.rowCount) {
+        throw new Error("Failed to update personal data in the users table.");
+      }
 
-      // Address Data Storing
+      // Step 2: Insert address data into the refUserAddress table
       let refAdAdd1Type: number = 3;
       let refAdAdd2Type: number = 0;
-
-      if (userData.address.addresstype == false) {
+      if (userData.address.addresstype === false) {
         refAdAdd1Type = 1;
         refAdAdd2Type = 2;
       }
@@ -158,20 +153,20 @@ export class ProfileRepository {
         userData.address.refAdState2,
         userData.address.refAdPincode2,
       ];
-
-      console.log("paramsAddress", paramsAddress);
-      const userResult2 = await executeQuery(
+      const userResult2 = await client.query(
         insertProfileAddressQuery,
         paramsAddress
       );
+      if (!userResult2.rowCount) {
+        throw new Error(
+          "Failed to insert address data into the refUserAddress table."
+        );
+      }
 
-      console.log("userResult2", userResult2);
-      // Storing Health Details Data
+      // Step 3: Insert health-related data into the refGeneralHealth table
       const refPresentHealthJson = JSON.stringify(
         userData.generalhealth.refPresentHealth
       );
-      console.log("refPresentHealthJson", refPresentHealthJson);
-
       const paramsHealth = [
         userData.refStId,
         userData.generalhealth.refHeight,
@@ -197,117 +192,39 @@ export class ProfileRepository {
         userData.generalhealth.refFamilyHistory,
         userData.generalhealth.refAnythingelse,
       ];
-
-      console.log("paramsHealth", paramsHealth);
-      const userResult3 = await executeQuery(
+      const userResult3 = await client.query(
         insertProfileGeneralHealth,
         paramsHealth
       );
-
-      console.log("userResult3", userResult3);
-      const token = {
-        id: userData.refStId,
-      };
-      console.log("token", token);
-      // Check if all results are successful
-      console.log(
-        "userResult1 && userResult2 && userResult3",
-        userResult1 && userResult2 && userResult3
-      );
-
-      if (userResult1 && userResult2 && userResult3) {
-        const results = {
-          success: true,
-          message: "All data stored successfully",
-          token: generateToken(token, true),
-        };
-        return encrypt(results, true);
-      } else {
-        const results = {
-          success: false,
-          message: "Failed to store data in one or more tables",
-          token: generateToken(token, true),
-        };
-        return encrypt(results, false);
+      if (!userResult3.rowCount) {
+        throw new Error(
+          "Failed to insert health data into the refGeneralHealth table."
+        );
       }
+
+      // Commit the transaction if all queries succeeded
+      await client.query("COMMIT");
+
+      const token = { id: userData.refStId };
+      const results = {
+        success: true,
+        message: "All data stored successfully",
+        token: generateToken(token, true),
+      };
+      return encrypt(results, true);
     } catch (error) {
+      console.log("Error occurred:", error);
+
+      // Rollback the transaction in case of any error
+      await client.query("ROLLBACK");
+
       const results = {
         success: false,
-        message: error,
+        message: error || "Error occurred while processing.",
       };
       return encrypt(results, false);
-    }
-  }
-
-  public async userRegisterPageDataV1(userData: any): Promise<any> {
-    try {
-      const refStId = parseInt(userData.refStId, 10);
-      if (isNaN(refStId)) {
-        throw new Error("Invalid refStId. Must be a number.");
-      }
-
-      const params = [refStId];
-      const profileResult = await executeQuery(fetchProfileData, params);
-
-      if (!profileResult.length) {
-        throw new Error("Profile data not found for refStId: " + refStId);
-      }
-
-      function formatDate(isoDate: any) {
-        const date = new Date(isoDate); // Create a new Date object
-        const day = String(date.getDate()).padStart(2, "0"); // Get the day and pad with zero if needed
-        const month = String(date.getMonth() + 1).padStart(2, "0"); // Get the month (0-based) and pad with zero
-        const year = date.getFullYear(); // Get the full year
-
-        return `${year}-${month}-${day}`; // Return formatted date
-      }
-
-      const profileData = {
-        fname: profileResult[0].refStFName,
-        lname: profileResult[0].refStLName,
-        dob: formatDate(profileResult[0].refStDOB),
-        username: profileResult[0].refUserName,
-        email: profileResult[0].refCtEmail,
-        phone: profileResult[0].refCtMobile,
-        age: profileResult[0].refStAge,
-      };
-
-      const timingResult = await executeQuery(fetchPreferableTiming, []);
-      const preferableTiming = timingResult.reduce((acc: any, row: any) => {
-        acc[row.refTimeId] = row.refTime;
-        return acc;
-      }, {});
-
-      const healthResult = await executeQuery(fetchPresentHealthProblem, []);
-      const presentHealthProblem = healthResult.reduce((acc: any, row: any) => {
-        acc[row.refHealthId] = row.refHealth;
-        return acc;
-      }, {});
-
-      const registerData = {
-        ProfileData: profileData,
-        PreferableTiming: preferableTiming,
-        presentHealthProblem: presentHealthProblem,
-      };
-
-      const tokenData = {
-        id: refStId,
-      };
-
-      const token = generateToken(tokenData, true);
-
-      return encrypt(
-        {
-          success: true,
-          message: "userRegisterPageData",
-          data: registerData,
-          token: token,
-        },
-        true
-      );
-    } catch (error) {
-      console.error("Error in userRegisterPageDataV1:", error);
-      throw error;
+    } finally {
+      client.release(); // Release the client back to the pool
     }
   }
 }

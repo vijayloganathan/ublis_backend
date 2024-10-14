@@ -10,6 +10,7 @@ export class Resolver {
   }
 
   public async userLoginV1(user_data: any, domain_code: any): Promise<any> {
+    console.log("user_data line------13", user_data);
     return await this.userRepository.userLoginV1(user_data, domain_code);
   }
 
