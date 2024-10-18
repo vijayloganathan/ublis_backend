@@ -1,0 +1,422 @@
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-18T01:52:40.272Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2024-10-18T01:53:23.074Z"}
+{"level":"info","message":"GET URL REQ => http://localhost:6200/api/v1/director/addEmployee","timestamp":"2024-10-18T01:53:23.076Z"}
+{"level":"error","message":"Error in Adding New Employee this.resolver.addEmployeeV1 is not a function","stack":"TypeError: this.resolver.addEmployeeV1 is not a function\n    at Director.<anonymous> (C:\\Users\\VIJAY L\\Desktop\\backend\\src\\api\\controller.ts:562:36)\n    at Generator.next (<anonymous>)\n    at C:\\Users\\VIJAY L\\Desktop\\backend\\src\\api\\controller.ts:8:71\n    at new Promise (<anonymous>)\n    at __awaiter (C:\\Users\\VIJAY L\\Desktop\\backend\\src\\api\\controller.ts:4:12)\n    at Director.addEmployee (C:\\Users\\VIJAY L\\Desktop\\backend\\src\\api\\controller.ts:554:21)\n    at exports.Manager.execute (C:\\Users\\VIJAY L\\Desktop\\backend\\node_modules\\@hapi\\hapi\\lib\\toolkit.js:57:29)\n    at Object.internals.handler (C:\\Users\\VIJAY L\\Desktop\\backend\\node_modules\\@hapi\\hapi\\lib\\handler.js:46:48)\n    at exports.execute (C:\\Users\\VIJAY L\\Desktop\\backend\\node_modules\\@hapi\\hapi\\lib\\handler.js:31:36)\n    at Request._lifecycle (C:\\Users\\VIJAY L\\Desktop\\backend\\node_modules\\@hapi\\hapi\\lib\\request.js:370:68)","timestamp":"2024-10-18T01:53:23.097Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-18T01:54:31.577Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-18T01:54:37.004Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-18T01:54:44.307Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2024-10-18T01:54:44.780Z"}
+{"level":"info","message":"GET URL REQ => http://localhost:6200/api/v1/director/addEmployee","timestamp":"2024-10-18T01:54:44.783Z"}
+{"level":"error","message":"Error in Adding New Employee this.resolver.addEmployeeV1 is not a function","stack":"TypeError: this.resolver.addEmployeeV1 is not a function\n    at Director.<anonymous> (C:\\Users\\VIJAY L\\Desktop\\backend\\src\\api\\controller.ts:563:36)\n    at Generator.next (<anonymous>)\n    at C:\\Users\\VIJAY L\\Desktop\\backend\\src\\api\\controller.ts:8:71\n    at new Promise (<anonymous>)\n    at __awaiter (C:\\Users\\VIJAY L\\Desktop\\backend\\src\\api\\controller.ts:4:12)\n    at Director.addEmployee (C:\\Users\\VIJAY L\\Desktop\\backend\\src\\api\\controller.ts:554:21)\n    at exports.Manager.execute (C:\\Users\\VIJAY L\\Desktop\\backend\\node_modules\\@hapi\\hapi\\lib\\toolkit.js:57:29)\n    at Object.internals.handler (C:\\Users\\VIJAY L\\Desktop\\backend\\node_modules\\@hapi\\hapi\\lib\\handler.js:46:48)\n    at exports.execute (C:\\Users\\VIJAY L\\Desktop\\backend\\node_modules\\@hapi\\hapi\\lib\\handler.js:31:36)\n    at Request._lifecycle (C:\\Users\\VIJAY L\\Desktop\\backend\\node_modules\\@hapi\\hapi\\lib\\request.js:370:68)","timestamp":"2024-10-18T01:54:44.800Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-18T01:55:29.558Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2024-10-18T01:55:30.700Z"}
+{"level":"info","message":"GET URL REQ => http://localhost:6200/api/v1/director/addEmployee","timestamp":"2024-10-18T01:55:30.703Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-18T01:55:43.837Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2024-10-18T01:55:45.859Z"}
+{"level":"info","message":"GET URL REQ => http://localhost:6200/api/v1/director/addEmployee","timestamp":"2024-10-18T01:55:45.860Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-18T02:01:27.196Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2024-10-18T02:02:58.259Z"}
+{"level":"info","message":"GET URL REQ => http://localhost:6200/api/v1/director/addEmployee","timestamp":"2024-10-18T02:02:58.260Z"}
+{"level":"error","message":"Error in Adding New Employee formidable_1.default.IncomingForm is not a constructor","stack":"TypeError: formidable_1.default.IncomingForm is not a constructor\n    at Director.<anonymous> (C:\\Users\\VIJAY L\\Desktop\\backend\\src\\api\\controller.ts:562:20)\n    at Generator.next (<anonymous>)\n    at C:\\Users\\VIJAY L\\Desktop\\backend\\src\\api\\controller.ts:31:71\n    at new Promise (<anonymous>)\n    at __awaiter (C:\\Users\\VIJAY L\\Desktop\\backend\\src\\api\\controller.ts:27:12)\n    at Director.addEmployee (C:\\Users\\VIJAY L\\Desktop\\backend\\src\\api\\controller.ts:555:21)\n    at exports.Manager.execute (C:\\Users\\VIJAY L\\Desktop\\backend\\node_modules\\@hapi\\hapi\\lib\\toolkit.js:57:29)\n    at Object.internals.handler (C:\\Users\\VIJAY L\\Desktop\\backend\\node_modules\\@hapi\\hapi\\lib\\handler.js:46:48)\n    at exports.execute (C:\\Users\\VIJAY L\\Desktop\\backend\\node_modules\\@hapi\\hapi\\lib\\handler.js:31:36)\n    at Request._lifecycle (C:\\Users\\VIJAY L\\Desktop\\backend\\node_modules\\@hapi\\hapi\\lib\\request.js:370:68)","timestamp":"2024-10-18T02:02:58.272Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-18T02:03:41.727Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-18T02:03:48.497Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2024-10-18T02:03:51.970Z"}
+{"level":"info","message":"GET URL REQ => http://localhost:6200/api/v1/director/addEmployee","timestamp":"2024-10-18T02:03:51.971Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-18T02:06:28.043Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-18T03:48:25.827Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-18T03:56:28.243Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/users/login","timestamp":"2024-10-18T03:56:28.246Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-18T03:57:34.089Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-18T04:03:04.682Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-18T04:03:07.531Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/profile/passRegisterData","timestamp":"2024-10-18T04:03:11.401Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/profile/passRegisterData","timestamp":"2024-10-18T04:03:11.495Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/profile/passRegisterData","timestamp":"2024-10-18T04:04:07.946Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/profile/passRegisterData","timestamp":"2024-10-18T04:04:14.609Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/profile/passRegisterData","timestamp":"2024-10-18T04:04:14.642Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/profile/passRegisterData","timestamp":"2024-10-18T04:04:31.069Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/profile/passRegisterData","timestamp":"2024-10-18T04:04:31.294Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/profile/passRegisterData","timestamp":"2024-10-18T04:04:42.540Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/profile/passRegisterData","timestamp":"2024-10-18T04:04:44.554Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/profile/passRegisterData","timestamp":"2024-10-18T04:04:47.568Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/profile/passRegisterData","timestamp":"2024-10-18T04:04:49.477Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-18T04:06:34.666Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-18T04:07:36.493Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/users/login","timestamp":"2024-10-18T04:07:36.495Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/profile/passRegisterData","timestamp":"2024-10-18T04:10:36.328Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/profile/passRegisterData","timestamp":"2024-10-18T04:10:36.417Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2024-10-18T04:11:00.720Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/profile/RegisterData","timestamp":"2024-10-18T04:11:00.722Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/profile/passRegisterData","timestamp":"2024-10-18T04:11:27.760Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/profile/passRegisterData","timestamp":"2024-10-18T04:11:27.975Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/profile/passRegisterData","timestamp":"2024-10-18T04:11:39.488Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/profile/passRegisterData","timestamp":"2024-10-18T04:11:39.603Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/profile/passRegisterData","timestamp":"2024-10-18T04:11:53.780Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/profile/passRegisterData","timestamp":"2024-10-18T04:11:53.881Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/profile/passRegisterData","timestamp":"2024-10-18T04:12:03.990Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/profile/passRegisterData","timestamp":"2024-10-18T04:12:07.361Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/profile/passRegisterData","timestamp":"2024-10-18T04:12:07.393Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/profile/passRegisterData","timestamp":"2024-10-18T04:12:11.545Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/profile/passRegisterData","timestamp":"2024-10-18T04:12:48.567Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/profile/passRegisterData","timestamp":"2024-10-18T04:12:48.775Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/profile/passRegisterData","timestamp":"2024-10-18T04:12:52.788Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/profile/passRegisterData","timestamp":"2024-10-18T04:12:52.821Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/profile/passRegisterData","timestamp":"2024-10-18T04:12:56.502Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/profile/passRegisterData","timestamp":"2024-10-18T04:12:59.104Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/profile/passRegisterData","timestamp":"2024-10-18T04:12:59.243Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/profile/passRegisterData","timestamp":"2024-10-18T04:13:03.488Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/profile/passRegisterData","timestamp":"2024-10-18T04:13:13.290Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/profile/passRegisterData","timestamp":"2024-10-18T04:13:13.322Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/profile/passRegisterData","timestamp":"2024-10-18T04:13:19.967Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/profile/passRegisterData","timestamp":"2024-10-18T04:13:24.980Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/profile/passRegisterData","timestamp":"2024-10-18T04:13:31.188Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-18T04:13:39.183Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-18T04:13:53.687Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/profile/passRegisterData","timestamp":"2024-10-18T04:14:01.106Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/profile/passRegisterData","timestamp":"2024-10-18T04:14:01.400Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/profile/passRegisterData","timestamp":"2024-10-18T04:14:01.428Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-18T04:15:43.610Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/users/login","timestamp":"2024-10-18T04:15:43.611Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-18T04:18:10.302Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/users/login","timestamp":"2024-10-18T04:18:10.303Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/profile/passRegisterData","timestamp":"2024-10-18T04:46:57.480Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/profile/passRegisterData","timestamp":"2024-10-18T04:46:57.702Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/profile/passRegisterData","timestamp":"2024-10-18T04:47:10.940Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/profile/passRegisterData","timestamp":"2024-10-18T04:47:11.023Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/profile/passRegisterData","timestamp":"2024-10-18T04:47:17.946Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/profile/passRegisterData","timestamp":"2024-10-18T04:47:17.987Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/profile/passRegisterData","timestamp":"2024-10-18T04:47:21.324Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/profile/passRegisterData","timestamp":"2024-10-18T04:47:21.363Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-18T04:47:34.512Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/profile/passRegisterData","timestamp":"2024-10-18T04:47:36.172Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/profile/passRegisterData","timestamp":"2024-10-18T04:47:38.176Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/profile/passRegisterData","timestamp":"2024-10-18T04:47:41.483Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/profile/passRegisterData","timestamp":"2024-10-18T04:47:41.526Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/profile/passRegisterData","timestamp":"2024-10-18T04:48:53.288Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/profile/passRegisterData","timestamp":"2024-10-18T04:48:53.365Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-18T04:49:09.524Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/profile/passRegisterData","timestamp":"2024-10-18T04:49:09.596Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/profile/passRegisterData","timestamp":"2024-10-18T04:49:09.676Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/profile/passRegisterData","timestamp":"2024-10-18T04:49:17.930Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-18T04:49:21.592Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/profile/passRegisterData","timestamp":"2024-10-18T04:49:25.033Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-18T04:49:38.412Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-18T04:50:14.835Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-18T04:51:07.258Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-18T04:52:23.141Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-18T04:54:48.836Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-18T04:54:58.977Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-18T04:57:50.661Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-18T04:58:02.409Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-18T04:58:36.229Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-18T04:58:55.339Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-18T04:59:12.006Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-18T04:59:16.549Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-18T04:59:22.137Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-18T05:00:44.316Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-18T05:01:49.869Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-18T05:03:18.653Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/validatetoken","timestamp":"2024-10-18T05:03:18.655Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/profile/passRegisterData","timestamp":"2024-10-18T05:07:36.754Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/profile/passRegisterData","timestamp":"2024-10-18T05:07:36.838Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/profile/passRegisterData","timestamp":"2024-10-18T05:10:19.510Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/profile/passRegisterData","timestamp":"2024-10-18T05:10:21.506Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/profile/passRegisterData","timestamp":"2024-10-18T05:12:11.801Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/profile/passRegisterData","timestamp":"2024-10-18T05:12:33.068Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/profile/passRegisterData","timestamp":"2024-10-18T05:12:33.265Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/profile/passRegisterData","timestamp":"2024-10-18T05:12:38.515Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-18T05:15:57.415Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/validatetoken","timestamp":"2024-10-18T05:15:57.416Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-18T05:16:00.478Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/validatetoken","timestamp":"2024-10-18T05:16:00.480Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-18T05:16:00.515Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/validatetoken","timestamp":"2024-10-18T05:16:00.516Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-18T05:16:27.581Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/validatetoken","timestamp":"2024-10-18T05:16:27.583Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-18T05:16:27.652Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/validatetoken","timestamp":"2024-10-18T05:16:27.652Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-18T05:16:37.508Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/validatetoken","timestamp":"2024-10-18T05:16:37.510Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-18T05:19:22.820Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-18T05:19:54.243Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-18T05:19:59.506Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-18T05:20:19.886Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-18T05:21:51.815Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-18T05:22:04.833Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/validatetoken","timestamp":"2024-10-18T05:22:04.834Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-18T05:22:04.916Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/validatetoken","timestamp":"2024-10-18T05:22:04.917Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-18T05:22:37.515Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/validatetoken","timestamp":"2024-10-18T05:22:37.516Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-18T05:22:42.409Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/validatetoken","timestamp":"2024-10-18T05:22:42.411Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-18T05:22:42.443Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/validatetoken","timestamp":"2024-10-18T05:22:42.445Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-18T05:22:51.494Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/validatetoken","timestamp":"2024-10-18T05:22:51.496Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-18T05:22:53.514Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/validatetoken","timestamp":"2024-10-18T05:22:53.516Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-18T05:22:54.566Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/validatetoken","timestamp":"2024-10-18T05:22:54.568Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-18T05:22:57.738Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/validatetoken","timestamp":"2024-10-18T05:22:57.740Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-18T05:22:57.879Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/validatetoken","timestamp":"2024-10-18T05:22:57.881Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/staff/dashBoard","timestamp":"2024-10-18T05:23:52.899Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/staff/dashBoard","timestamp":"2024-10-18T05:23:52.995Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-18T05:24:05.510Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-18T05:24:07.849Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/validatetoken","timestamp":"2024-10-18T05:24:07.849Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-18T05:24:07.860Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/validatetoken","timestamp":"2024-10-18T05:24:07.861Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-18T05:30:50.606Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/validatetoken","timestamp":"2024-10-18T05:30:50.609Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-18T05:30:50.620Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/validatetoken","timestamp":"2024-10-18T05:30:50.622Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-18T05:33:18.787Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/validatetoken","timestamp":"2024-10-18T05:33:18.788Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-18T05:36:27.567Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-18T05:37:13.874Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-18T05:37:39.267Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/validatetoken","timestamp":"2024-10-18T05:37:39.268Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-18T05:37:39.279Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/validatetoken","timestamp":"2024-10-18T05:37:39.280Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-18T05:46:09.085Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-18T05:46:12.602Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-18T05:46:48.022Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-18T05:47:39.585Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-18T05:48:35.298Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-18T05:48:55.579Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-18T05:48:58.561Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-18T05:49:17.681Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/validatetoken","timestamp":"2024-10-18T05:49:17.682Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-18T05:49:17.707Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/validatetoken","timestamp":"2024-10-18T05:49:17.707Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/staff/dashBoard","timestamp":"2024-10-18T06:00:28.325Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/staff/dashBoard","timestamp":"2024-10-18T06:00:28.801Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/staff/userManagementPage","timestamp":"2024-10-18T06:01:07.906Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/staff/userManagementPage","timestamp":"2024-10-18T06:01:08.004Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/staff/dashBoard","timestamp":"2024-10-18T06:01:08.974Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/staff/dashBoard","timestamp":"2024-10-18T06:01:09.016Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/staff/userSignedUp","timestamp":"2024-10-18T06:01:14.374Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/staff/userSignedUp","timestamp":"2024-10-18T06:01:14.420Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/staff/dashBoard","timestamp":"2024-10-18T06:01:18.433Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/staff/dashBoard","timestamp":"2024-10-18T06:01:18.525Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/staff/userManagementPage","timestamp":"2024-10-18T06:01:44.586Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/staff/userManagementPage","timestamp":"2024-10-18T06:01:44.683Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/staff/userManagementPage","timestamp":"2024-10-18T06:02:26.406Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/staff/userManagementPage","timestamp":"2024-10-18T06:02:26.498Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/staff/studentApproval","timestamp":"2024-10-18T06:02:32.124Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/staff/studentApproval","timestamp":"2024-10-18T06:02:32.144Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/director/staff","timestamp":"2024-10-18T06:02:33.549Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/director/staff","timestamp":"2024-10-18T06:02:33.571Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/director/staff","timestamp":"2024-10-18T06:02:41.567Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/director/staff","timestamp":"2024-10-18T06:02:41.592Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/director/staff","timestamp":"2024-10-18T06:03:07.438Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/director/staff","timestamp":"2024-10-18T06:03:08.815Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/director/staff","timestamp":"2024-10-18T06:03:19.899Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/director/staff","timestamp":"2024-10-18T06:03:19.980Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/director/staff","timestamp":"2024-10-18T06:03:38.738Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/director/staff","timestamp":"2024-10-18T06:03:40.710Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/director/staff","timestamp":"2024-10-18T06:03:51.266Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/director/staff","timestamp":"2024-10-18T06:03:52.199Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-18T06:03:56.273Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/validatetoken","timestamp":"2024-10-18T06:03:56.274Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-18T06:04:20.493Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/validatetoken","timestamp":"2024-10-18T06:04:20.494Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-18T06:04:20.586Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/validatetoken","timestamp":"2024-10-18T06:04:20.586Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-18T06:04:25.481Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/validatetoken","timestamp":"2024-10-18T06:04:25.482Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-18T06:04:54.010Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/validatetoken","timestamp":"2024-10-18T06:04:54.012Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-18T06:04:54.019Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/validatetoken","timestamp":"2024-10-18T06:04:54.020Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-18T06:05:55.789Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/validatetoken","timestamp":"2024-10-18T06:05:55.791Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-18T06:05:58.936Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/validatetoken","timestamp":"2024-10-18T06:05:58.937Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-18T06:06:01.665Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/validatetoken","timestamp":"2024-10-18T06:06:01.666Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/director/staff","timestamp":"2024-10-18T06:06:02.564Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/director/staff","timestamp":"2024-10-18T06:06:02.759Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-18T06:06:04.575Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/validatetoken","timestamp":"2024-10-18T06:06:04.576Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-18T06:06:06.229Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/validatetoken","timestamp":"2024-10-18T06:06:06.230Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/director/staff","timestamp":"2024-10-18T06:06:06.233Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/director/staff","timestamp":"2024-10-18T06:06:06.535Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/director/staff","timestamp":"2024-10-18T06:06:09.415Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/director/staff","timestamp":"2024-10-18T06:06:09.495Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-18T06:06:11.490Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/validatetoken","timestamp":"2024-10-18T06:06:11.491Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-18T06:06:15.430Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/validatetoken","timestamp":"2024-10-18T06:06:15.431Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-18T06:06:22.470Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/validatetoken","timestamp":"2024-10-18T06:06:22.471Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-18T06:06:23.462Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/validatetoken","timestamp":"2024-10-18T06:06:23.463Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-18T06:06:27.033Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/validatetoken","timestamp":"2024-10-18T06:06:27.034Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-18T06:06:39.473Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/validatetoken","timestamp":"2024-10-18T06:06:39.474Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-18T06:06:40.468Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/validatetoken","timestamp":"2024-10-18T06:06:40.469Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-18T06:06:43.463Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/validatetoken","timestamp":"2024-10-18T06:06:43.464Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/director/staff","timestamp":"2024-10-18T06:06:53.084Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/director/staff","timestamp":"2024-10-18T06:06:53.114Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/director/staff","timestamp":"2024-10-18T06:07:03.531Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/director/staff","timestamp":"2024-10-18T06:07:03.698Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-18T06:07:13.494Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/validatetoken","timestamp":"2024-10-18T06:07:13.499Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-18T06:07:14.699Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/validatetoken","timestamp":"2024-10-18T06:07:14.701Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-18T06:07:36.487Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/validatetoken","timestamp":"2024-10-18T06:07:36.488Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2024-10-18T06:09:19.035Z"}
+{"level":"info","message":"GET URL REQ => http://localhost:6200/api/v1/director/addEmployee","timestamp":"2024-10-18T06:09:19.036Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-18T06:09:21.643Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/validatetoken","timestamp":"2024-10-18T06:09:21.644Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-18T06:09:21.676Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/validatetoken","timestamp":"2024-10-18T06:09:21.677Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-18T06:09:41.475Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/validatetoken","timestamp":"2024-10-18T06:09:41.475Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/director/staff","timestamp":"2024-10-18T06:09:46.599Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-18T06:09:46.616Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/validatetoken","timestamp":"2024-10-18T06:09:46.618Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-18T06:09:46.638Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/validatetoken","timestamp":"2024-10-18T06:09:46.638Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/director/staff","timestamp":"2024-10-18T06:09:46.640Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/staff/dashBoard","timestamp":"2024-10-18T06:09:48.089Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/staff/dashBoard","timestamp":"2024-10-18T06:09:48.128Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/staff/userManagementPage","timestamp":"2024-10-18T06:09:50.801Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/staff/userManagementPage","timestamp":"2024-10-18T06:09:50.827Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/staff/dashBoard","timestamp":"2024-10-18T06:09:52.371Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/staff/dashBoard","timestamp":"2024-10-18T06:09:52.390Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/staff/userManagementPage","timestamp":"2024-10-18T06:09:53.958Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/staff/userManagementPage","timestamp":"2024-10-18T06:09:53.984Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-18T06:09:57.740Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/validatetoken","timestamp":"2024-10-18T06:09:57.741Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-18T06:10:00.581Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/validatetoken","timestamp":"2024-10-18T06:10:00.582Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-18T06:10:01.126Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/validatetoken","timestamp":"2024-10-18T06:10:01.127Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-18T06:10:03.013Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/validatetoken","timestamp":"2024-10-18T06:10:03.014Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-18T06:10:13.310Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/validatetoken","timestamp":"2024-10-18T06:10:13.312Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-18T06:10:20.848Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/validatetoken","timestamp":"2024-10-18T06:10:20.849Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-18T06:10:20.856Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/validatetoken","timestamp":"2024-10-18T06:10:20.857Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-18T06:10:21.766Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/validatetoken","timestamp":"2024-10-18T06:10:21.768Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-18T06:10:44.418Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/staff/studentApproval","timestamp":"2024-10-18T06:10:44.707Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/staff/userManagementPage","timestamp":"2024-10-18T06:10:44.800Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/staff/studentApproval","timestamp":"2024-10-18T06:10:44.803Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/staff/userManagementPage","timestamp":"2024-10-18T06:10:44.823Z"}
+{"level":"info","message":"Router-----store Register Form Data","timestamp":"2024-10-18T06:10:44.948Z"}
+{"level":"info","message":"GET URL REQ => http://localhost:6200/api/v1/director/addEmployee","timestamp":"2024-10-18T06:10:44.949Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-18T06:12:10.574Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/validatetoken","timestamp":"2024-10-18T06:12:10.577Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-18T06:12:10.668Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/validatetoken","timestamp":"2024-10-18T06:12:10.669Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-18T06:12:28.482Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/validatetoken","timestamp":"2024-10-18T06:12:28.484Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-18T06:12:36.487Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/validatetoken","timestamp":"2024-10-18T06:12:36.487Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-18T06:12:40.475Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/validatetoken","timestamp":"2024-10-18T06:12:40.476Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-18T06:12:42.470Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/validatetoken","timestamp":"2024-10-18T06:12:42.471Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/staff/dashBoard","timestamp":"2024-10-18T06:12:58.499Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/staff/dashBoard","timestamp":"2024-10-18T06:12:58.697Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/staff/dashBoard","timestamp":"2024-10-18T06:13:04.170Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/staff/userManagementPage","timestamp":"2024-10-18T06:13:05.282Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/staff/userManagementPage","timestamp":"2024-10-18T06:13:05.316Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/staff/dashBoard","timestamp":"2024-10-18T06:13:10.297Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/staff/dashBoard","timestamp":"2024-10-18T06:13:10.317Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/staff/dashBoard","timestamp":"2024-10-18T06:13:14.958Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/staff/dashBoard","timestamp":"2024-10-18T06:13:29.881Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/staff/dashBoard","timestamp":"2024-10-18T06:13:41.911Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-18T06:13:45.177Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/validatetoken","timestamp":"2024-10-18T06:13:45.177Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-18T06:14:00.689Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-18T06:14:03.354Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/validatetoken","timestamp":"2024-10-18T06:14:03.355Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-18T06:14:03.369Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/validatetoken","timestamp":"2024-10-18T06:14:03.370Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-18T06:14:09.501Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-18T06:14:11.281Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/validatetoken","timestamp":"2024-10-18T06:14:11.282Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-18T06:14:13.746Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/validatetoken","timestamp":"2024-10-18T06:14:13.748Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-18T06:14:13.798Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/validatetoken","timestamp":"2024-10-18T06:14:13.799Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-18T06:14:18.618Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-18T06:14:36.574Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-18T06:14:46.488Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/validatetoken","timestamp":"2024-10-18T06:14:46.489Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-18T06:14:50.466Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/validatetoken","timestamp":"2024-10-18T06:14:50.468Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-18T06:14:55.492Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/validatetoken","timestamp":"2024-10-18T06:14:55.494Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-18T06:15:00.475Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/validatetoken","timestamp":"2024-10-18T06:15:00.478Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-18T06:15:03.455Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/validatetoken","timestamp":"2024-10-18T06:15:03.456Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-18T06:15:10.408Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-18T06:15:20.500Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-18T06:15:20.576Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/validatetoken","timestamp":"2024-10-18T06:15:20.577Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-18T06:15:20.677Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/validatetoken","timestamp":"2024-10-18T06:15:20.678Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-18T06:15:20.760Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/validatetoken","timestamp":"2024-10-18T06:15:20.761Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-18T06:15:20.861Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/validatetoken","timestamp":"2024-10-18T06:15:20.862Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-18T06:15:20.901Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/validatetoken","timestamp":"2024-10-18T06:15:20.903Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-18T06:15:22.237Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/users/login","timestamp":"2024-10-18T06:15:22.239Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-18T06:15:38.537Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/validatetoken","timestamp":"2024-10-18T06:15:38.540Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-18T06:15:42.532Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/validatetoken","timestamp":"2024-10-18T06:15:42.534Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-18T06:15:42.540Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/users/login","timestamp":"2024-10-18T06:15:42.541Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-18T06:15:53.823Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/validatetoken","timestamp":"2024-10-18T06:15:53.826Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-18T06:15:58.480Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/validatetoken","timestamp":"2024-10-18T06:15:58.481Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-18T06:16:01.492Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/validatetoken","timestamp":"2024-10-18T06:16:01.494Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-18T06:16:04.498Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/validatetoken","timestamp":"2024-10-18T06:16:04.500Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-18T06:16:07.477Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/validatetoken","timestamp":"2024-10-18T06:16:07.478Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-18T06:16:11.978Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/validatetoken","timestamp":"2024-10-18T06:16:11.979Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-18T06:16:11.997Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/validatetoken","timestamp":"2024-10-18T06:16:11.998Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-18T06:16:27.955Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/validatetoken","timestamp":"2024-10-18T06:16:27.957Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-18T06:16:45.718Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/validatetoken","timestamp":"2024-10-18T06:16:45.720Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-18T06:16:48.477Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/validatetoken","timestamp":"2024-10-18T06:16:48.478Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-18T06:16:56.633Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/users/login","timestamp":"2024-10-18T06:16:56.635Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/staff/dashBoard","timestamp":"2024-10-18T06:16:58.074Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/staff/dashBoard","timestamp":"2024-10-18T06:16:58.166Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-18T06:20:00.051Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-18T06:20:08.487Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/validatetoken","timestamp":"2024-10-18T06:20:08.490Z"}
+{"level":"info","message":"Router----- line 17","timestamp":"2024-10-18T06:20:11.463Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/validatetoken","timestamp":"2024-10-18T06:20:11.465Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-18T06:20:29.517Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/staff/dashBoard","timestamp":"2024-10-18T06:21:06.343Z"}
+{"level":"info","message":"GET URL REQ => http://192.168.29.35:6200/api/v1/staff/dashBoard","timestamp":"2024-10-18T06:21:06.439Z"}
+{"level":"info","message":"server running --- from server.ts","timestamp":"2024-10-18T06:22:05.934Z"}

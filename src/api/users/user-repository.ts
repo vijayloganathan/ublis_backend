@@ -8,20 +8,21 @@ import {
   selectUserByEmailQuery,
   insertUserCommunicationQuery,
   updateHistoryQuery,
+  selectUserData,
+  getSingInCount,
+  getFollowUpCount,
+  getRegisterResult,
 } from "./query";
 import { encrypt } from "../../helper/encrypt";
 import { v4 as uuidv4 } from "uuid";
 import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
-import { generateToken } from "../../helper/token";
+import { generateToken, generateToken1 } from "../../helper/token";
 
 const JWT_SECRET = process.env.ACCESS_TOKEN || "ERROR";
 
 export class UserRepository {
-  // SIGN IN FUNCTION
   public async userLoginV1(user_data: any, domain_code?: any): Promise<any> {
-    console.log("user_data line-------23", user_data);
-
     const params = [user_data.username];
     const users = await executeQuery(selectUserByUsername, params); // Execute select query
 
@@ -42,12 +43,31 @@ export class UserRepository {
         ];
 
         const updateHistory = await executeQuery(updateHistoryQuery, history);
+        const refStId = [user.refStId];
+        const userData = await executeQuery(selectUserData, refStId);
+
+        const signinCount = await executeQuery(getSingInCount, refStId);
+        const status1 = signinCount.length > 0 ? signinCount[0].status : null;
+        const followUpCount = await executeQuery(getFollowUpCount, refStId);
+        const status2 =
+          followUpCount.length > 0 ? followUpCount[0].status : null;
+
+        const getRegisterCount = await executeQuery(getRegisterResult, refStId);
+        const status3 =
+          getRegisterCount.length > 0 ? getRegisterCount[0].status : null;
+        let result: boolean = true;
+        if (status2 == false || status3 == false) {
+          result = false;
+        }
+        const registerBtn = {
+          signUpCount: status1,
+          followUpCount: result,
+          refUtId: userData,
+        };
 
         if (updateHistory && updateHistory.length > 0) {
           const tokenData = {
             id: user.refStId,
-            custId: user.refSCustId,
-            status: user.refSUserStatus,
           };
 
           return encrypt(
@@ -55,6 +75,7 @@ export class UserRepository {
               success: true,
               message: "Login successful",
               token: generateToken(tokenData, true),
+              data: registerBtn,
             },
             true
           );
@@ -73,7 +94,6 @@ export class UserRepository {
     );
   }
 
-  // SIGN UP FUNCTION
   public async userSignUpV1(userData: any, domain_code?: any): Promise<any> {
     const hashedPassword = await bcrypt.hash(userData.temp_su_password, 10);
     const userId = uuidv4();
@@ -100,6 +120,7 @@ export class UserRepository {
       if (userCount >= 0) {
         newCustomerId = `UBY${(10000 + userCount + 1).toString()}`; // Generate the ID
       }
+      let userType = 1;
 
       const params = [
         userData.temp_su_fname, // refStFName
@@ -107,6 +128,7 @@ export class UserRepository {
         userData.temp_su_dob, // refStDOB
         userData.temp_su_age, // refStAge
         newCustomerId,
+        (userType = 1),
       ];
 
       const userResult = await executeQuery(insertUserQuery, params);
@@ -189,15 +211,82 @@ export class UserRepository {
       }
     }
   }
+  public async validateUserNameV1(
+    userData: any,
+    domain_code?: any
+  ): Promise<any> {
+    const check = [userData.temp_su_username];
 
-  // Helper function to generate JWT token
-  // private generateToken(user: any): string {
-  //   const payload = {
-  //     id: user.refStId, // refStId from users table
-  //     email: user.refCustPrimEmail,
-  //     custId: user.refSCustId,
-  //     status: user.refSUserStatus,
-  //   };
-  //   return jwt.sign(payload, JWT_SECRET, { expiresIn: "20m" });
-  // }
+    const userCheck = await executeQuery(checkQuery, check);
+    const userFind = userCheck[0];
+
+    if (userFind) {
+      return encrypt(
+        {
+          success: false,
+          message: "Username Already Exist",
+        },
+        true
+      );
+    } else {
+      return encrypt(
+        {
+          success: true,
+          message: "username is unique",
+        },
+        true
+      );
+    }
+  }
+
+  public async validateUsers(
+    userData: any,
+    decodedToken: number,
+    domain_code?: any
+  ): Promise<any> {
+    try {
+      const refStId = decodedToken;
+      const id = [refStId];
+      const user = await executeQuery(selectUserData, id);
+
+      const signinCount = await executeQuery(getSingInCount, id);
+      const status1 = signinCount.length > 0 ? signinCount[0].status : null;
+      const followUpCount = await executeQuery(getFollowUpCount, id);
+      const status2 = followUpCount.length > 0 ? followUpCount[0].status : null;
+
+      const getRegisterCount = await executeQuery(getRegisterResult, id);
+      const status3 =
+        getRegisterCount.length > 0 ? getRegisterCount[0].status : null;
+      let result: boolean = true;
+      if (status2 == false || status3 == false) {
+        result = false;
+      }
+      const registerBtn = {
+        signUpCount: status1,
+        followUpCount: result,
+        refUtId: userData,
+      };
+
+      const tokenData = {
+        id: refStId,
+        UserType: user,
+      };
+
+      const token = generateToken1(tokenData, true);
+
+      return encrypt(
+        {
+          success: true,
+          message: "user Validate Token",
+          token: token,
+          data: user,
+          registerBtn: registerBtn,
+        },
+        true
+      );
+    } catch (error) {
+      console.error("Error in User Token Validation:", error);
+      throw error;
+    }
+  }
 }

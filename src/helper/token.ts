@@ -25,9 +25,19 @@ function generateToken(tokenData: object, action: boolean): string | object {
   }
 }
 
+function generateToken1(tokenData: object, action: boolean): string | object {
+  if (action) {
+    const token = jwt.sign(tokenData, process.env.ACCESS_TOKEN as string, {
+      // Do not set `expiresIn` for an infinite token lifespan
+    });
+    return token;
+  } else {
+    return tokenData;
+  }
+}
+
 // Function to decode a token
 function decodeToken(token: string): JwtPayload | { error: string } {
-  console.log("token line ------31", token);
   try {
     const decoded = jwt.verify(token, process.env.ACCESS_TOKEN as string);
     if (typeof decoded === "string") {
@@ -40,6 +50,10 @@ function decodeToken(token: string): JwtPayload | { error: string } {
 }
 
 function validateToken(request: any, h: ResponseToolkit) {
+  console.log(
+    "\n\n\n\nValidateToken line ------------------42",
+    request.headers.authorization
+  );
   const authHeader = request.headers.authorization;
   if (!authHeader) {
     return h.response({ error: "Token missing" }).code(401).takeover();
@@ -48,9 +62,7 @@ function validateToken(request: any, h: ResponseToolkit) {
   const decodedToken = decodeToken(token);
   request.plugins.token = decodedToken;
 
-  console.log("decodedToken line--------=-49", decodedToken);
-
   return h.continue;
 }
 
-export { decodeToken, generateToken, validateToken };
+export { decodeToken, generateToken, validateToken, generateToken1 };

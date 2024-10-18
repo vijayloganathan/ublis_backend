@@ -6,9 +6,12 @@ import {
   fetchProfileData,
   fetchPreferableTiming,
   fetchPresentHealthProblem,
+  insertCommunicationData,
+  updateHistoryQuery,
+  fetchBranchList,
 } from "./query";
 import { encrypt } from "../../helper/encrypt";
-import { generateToken } from "../../helper/token";
+import { generateToken, generateToken1 } from "../../helper/token";
 import { PoolClient } from "pg"; // Assuming you're using pg library for PostgreSQL
 
 export class ProfileRepository {
@@ -47,7 +50,6 @@ export class ProfileRepository {
   }
 
   public async userPersonalDataV1(userData: any): Promise<any> {
-    console.log("userData line-------50");
     const params = [
       userData.personalData.ref_su_gender,
       userData.personalData.ref_su_qulify,
@@ -113,30 +115,63 @@ export class ProfileRepository {
       await client.query("BEGIN");
 
       userData.refStId = decodedToken;
+      const refUtId = 2;
 
       // Step 1: Update personal data in users table
       const paramsProfile = [
-        userData.personalData.ref_su_gender,
-        userData.personalData.ref_su_qulify,
-        userData.personalData.ref_su_occu,
-        userData.personalData.ref_su_guardian,
-        userData.personalData.ref_su_timing,
-        userData.refStId,
+        userData.personalData.ref_su_gender, //1
+        userData.personalData.ref_su_qulify, //2
+        userData.personalData.ref_su_occu, //3
+        userData.personalData.ref_su_guardian, //4
+        userData.personalData.ref_su_timing, //5
+        refUtId, //6
+        userData.personalData.ref_su_branch, //7
+        userData.personalData.ref_su_fname, //8
+        userData.personalData.ref_su_lname, //9
+        userData.personalData.ref_su_dob, //10
+        userData.personalData.ref_su_age, //11
+        userData.refStId, //12
       ];
+
       const userResult1 = await client.query(
         insertProfilePersonalData,
         paramsProfile
       );
+
       if (!userResult1.rowCount) {
         throw new Error("Failed to update personal data in the users table.");
       }
 
+      //step2: Insert Communication Data into the refCommunication table
+      const parasCommunication = [
+        userData.refStId, //1
+        userData.personalData.ref_su_Whatsapp, //2
+        userData.personalData.ref_su_phoneno, //3
+        userData.personalData.ref_su_mailid, //4
+      ];
+
+      const userResult2 = await client.query(
+        insertCommunicationData,
+        parasCommunication
+      );
+      if (!userResult2.rowCount) {
+        throw new Error(
+          "Failed to insert Communication  data into the refUserCommunication table."
+        );
+      }
+
       // Step 2: Insert address data into the refUserAddress table
-      let refAdAdd1Type: number = 3;
-      let refAdAdd2Type: number = 0;
-      if (userData.address.addresstype === false) {
-        refAdAdd1Type = 1;
-        refAdAdd2Type = 2;
+
+      let refAdAdd1Type: number = 1;
+      let refAdAdd2Type: number = 2;
+      if (userData.address.addresstype === true) {
+        refAdAdd1Type = 3;
+        refAdAdd2Type = 0;
+        userData.address.refAdAdd2 = "";
+        userData.address.refAdArea2 = "";
+        userData.address.refAdCity2 = "";
+        userData.address.refAdState2 = "";
+        userData.address.refAdPincode2 = "";
       }
 
       const paramsAddress = [
@@ -154,11 +189,11 @@ export class ProfileRepository {
         userData.address.refAdState2,
         userData.address.refAdPincode2,
       ];
-      const userResult2 = await client.query(
+      const userResult3 = await client.query(
         insertProfileAddressQuery,
         paramsAddress
       );
-      if (!userResult2.rowCount) {
+      if (!userResult3.rowCount) {
         throw new Error(
           "Failed to insert address data into the refUserAddress table."
         );
@@ -193,14 +228,30 @@ export class ProfileRepository {
         userData.generalhealth.refFamilyHistory,
         userData.generalhealth.refAnythingelse,
       ];
-      const userResult3 = await client.query(
+      const userResult4 = await client.query(
         insertProfileGeneralHealth,
         paramsHealth
       );
-      if (!userResult3.rowCount) {
+      if (!userResult4.rowCount) {
         throw new Error(
           "Failed to insert health data into the refGeneralHealth table."
         );
+      }
+      const transTypeId = 3,
+        transData = "Registered Form Data",
+        refUpdatedBy = "user";
+      const parasHistory = [
+        transTypeId,
+        transData,
+        userData.refStId,
+        new Date().toLocaleString(),
+        refUpdatedBy,
+      ];
+
+      const userResult5 = await client.query(updateHistoryQuery, parasHistory);
+
+      if (!userResult5.rowCount) {
+        throw new Error("Failed to insert The History In refUserTxnHistory.");
       }
 
       // Commit the transaction if all queries succeeded
@@ -210,12 +261,11 @@ export class ProfileRepository {
       const results = {
         success: true,
         message: "All data stored successfully",
-        token: generateToken(token, true),
+        token: generateToken1(token, true),
       };
       return encrypt(results, true);
     } catch (error) {
-      console.log("Error occurred:", error);
-
+      console.log("error", error);
       // Rollback the transaction in case of any error
       await client.query("ROLLBACK");
 
@@ -263,10 +313,12 @@ export class ProfileRepository {
       };
 
       const timingResult = await executeQuery(fetchPreferableTiming, []);
-      const preferableTiming = timingResult.reduce((acc: any, row: any) => {
-        acc[row.refTimeId] = row.refTime;
-        return acc;
-      }, {});
+      const preferableTiming = timingResult.map((row: any, index: number) => {
+        return {
+          [index +
+          1]: `${row.refTime} ${row.refTimeMembers} ${row.refTimeMode} ${row.refTimeDays}`,
+        };
+      });
 
       const healthResult = await executeQuery(fetchPresentHealthProblem, []);
       const presentHealthProblem = healthResult.reduce((acc: any, row: any) => {
@@ -274,17 +326,24 @@ export class ProfileRepository {
         return acc;
       }, {});
 
+      const branchResult = await executeQuery(fetchBranchList, []);
+      const branchList = branchResult.reduce((acc: any, row: any) => {
+        acc[row.refbranchId] = row.refBranchName;
+        return acc;
+      }, {});
+
       const registerData = {
         ProfileData: profileData,
         PreferableTiming: preferableTiming,
         presentHealthProblem: presentHealthProblem,
+        branchList: branchList,
       };
 
       const tokenData = {
         id: refStId,
       };
 
-      const token = generateToken(tokenData, true);
+      const token = generateToken1(tokenData, true);
 
       return encrypt(
         {
